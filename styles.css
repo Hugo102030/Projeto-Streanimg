@@ -1,0 +1,902 @@
+/* Logo */
+
+.logoMenu {
+    height: 60px;
+    cursor: pointer;
+    margin-left: 2em;
+    color: aliceblue;
+}
+
+/* NavBar */
+
+.navbar {
+    background-color: #0a0a0a;
+}
+
+/* Simbolo do Menu */
+
+#burguer {
+    display: none;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    color: #be2b11;
+}
+
+.navbar-opened:host .navbar-mobile-top {
+    padding: 13px 0;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-opened:host .container {
+    height: auto;
+    padding: 0px;
+}
+
+.navbar-logo {
+    margin-left: 15px;
+}
+
+/* Lista dos botao do menu */
+
+.top-navbar {
+    display: none;
+}
+
+.top-navbar a {
+    color: rgb(250, 250, 250);
+    font-size: larger;
+}
+
+#botaoMenu:hover {
+    background-color: #aa2811;
+}
+
+.navbar-opened:host {
+    .top-navbar {
+        display: block;
+        width: 100%;
+        height: auto;
+        flex: none;
+        color: #000;
+        background: #f3f3f3;
+    }
+}
+
+.navbar-opened:host .top-navbar a {
+    width: 100%;
+    line-height: 56px;
+    margin-top: 1em;
+    background-color: #681b0e;
+}
+
+/* Abas */
+
+.top-navbar {
+    width: 22em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: space-around;
+}
+
+.top-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-navbar a:hover {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+}
+
+/* Pesquisa */
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.searchInput {
+    padding: 10px;
+    width: 30em;
+    height: 50px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.searchButton {
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 3em;
+    width: 10em;
+    border: none;
+    font-size: 15px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #0f0f0f;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+    text-shadow: inset 0px 1px 0px #777777;
+    background: linear-gradient(#5e5e5e, #0c0006);
+}
+
+.searchButton:hover {
+    background: linear-gradient(#0c0006, #5e5e5e);
+}
+
+/* Login e Registro */
+
+.loginButtons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.buttonLogin {
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 10%;
+    border: none;
+    font-size: 15px;
+    font-family: Arial;
+    width: 6em;
+    height: 2em;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #0f0f0f;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+    text-shadow: inset 0px 1px 0px #777777;
+    background: linear-gradient(#3d3d3d, #0c0006);
+}
+
+.buttonLogin:hover {
+    background: linear-gradient(#0c0006, #5e5e5e);
+}
+
+/* Carousel */
+
+.carousel-inner {
+    width: 100%;
+    height: 600px;
+}
+
+/* Catalogo */
+
+.cataologoGeral {
+    width: 100%;
+}
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 20px;
+    background-color: #0a0a0a;
+}
+
+.catalogo h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: aliceblue;
+    margin-left: 3em;
+}
+
+.container {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.imagensCatalogo {
+    display: inline-block;
+    white-space: nowrap;
+    cursor: grab;
+    height: 300px;
+}
+
+.imagensCatalogo img {
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.imagensCatalogo img:hover {
+    width: 350px;
+    height: 250px;
+    box-shadow: rgba(250, 250, 250, 0.25) 0px 54px 55px,
+        rgba(250, 250, 250, 0.12) 0px -12px 30px,
+        rgba(250, 250, 250, 0.12) 0px 4px 6px,
+        rgba(250, 250, 250, 0.17) 0px 12px 13px,
+        rgba(250, 250, 250, 0.09) 0px -3px 5px;
+    ;
+}
+
+/* RodaPe */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #0a0a0a;
+
+}
+
+.redesSociais {
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 120px;
+    list-style-type: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1089px) and (max-width: 1440px) {
+    /* Logo */
+
+    .logoMenu {
+        width: 150px;
+        height: 40px;
+    }
+
+    /* Abas */
+
+
+    .top-navbar {
+        width: 25em;
+        font-size: 16px;
+        margin-bottom: 1em;
+    }
+
+    .top-navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-navbar a:hover {
+        text-decoration: none;
+        color: rgb(192, 192, 192);
+    }
+
+    /* Pesquisa */
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .searchInput {
+        padding: 10px;
+        width: 400px;
+        height: 50px;
+        font-size: 16px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .searchButton {
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 10px;
+        height: 40px;
+        width: 90px;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 10px;
+        border: none;
+        font-size: 15px;
+        font-family: Arial;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#5e5e5e, #0c0006);
+    }
+
+    .searchButton:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Login e Registro */
+
+    .loginButtons {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .buttonLogin {
+        border-radius: 10px;
+        margin-left: 10px;
+        height: 30px;
+        width: 70px;
+        border: none;
+        font-size: 12px;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#3d3d3d, #0c0006);
+    }
+
+    .buttonLogin:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Carousel */
+
+    .carousel-inner {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 685px) and (max-width: 1089px) {
+    /* Logo */
+
+    .logoMenu {
+        width: 120px;
+        height: 33px;
+    }
+
+    /* Abas */
+
+
+    .top-navbar {
+        width: 160px;
+        font-size: 8px;
+        margin-bottom: 2em;
+        margin-right: 1em;
+    }
+
+    .top-navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-navbar a:hover {
+        text-decoration: none;
+        color: rgb(192, 192, 192);
+    }
+
+    /* Pesquisa */
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .searchInput {
+        padding: 10px;
+        width: 200px;
+        height: 10px;
+        font-size: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .searchButton {
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 8px;
+        border-radius: 10px;
+        height: 30px;
+        width: 70px;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 10px;
+        border: none;
+        font-size: 10px;
+        font-family: Arial;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#5e5e5e, #0c0006);
+    }
+
+    .searchButton:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Login e Registro */
+
+    .loginButtons {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .buttonLogin {
+        border-radius: 10px;
+        margin-left: 10px;
+        height: 20px;
+        width: 50px;
+        border: none;
+        font-size: 8px;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#3d3d3d, #0c0006);
+    }
+
+    .buttonLogin:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Carousel */
+
+    .carousel-inner {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* RodaPe */
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #0a0a0a;
+
+    }
+
+    .redesSociais {
+        align-items: center;
+        margin-left: 3em;
+        justify-content: space-around;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 8px;
+        margin-left: 0px;
+        list-style-type: none;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+}
+
+/* Smartphone */
+
+@media screen and (min-width: 406px) and (max-width: 685px) {
+
+
+    /* Nav Bar */
+
+    #burguer {
+        display: block;
+        position: absolute;
+        margin-right: 0.5em;
+    }
+
+    #burguer:hover {
+        color: #b11414;
+    }
+
+    .hamburger {
+        height: 1em;
+        width: 1em;
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    /* Logo */
+
+    .logoMenu {
+        height: 20px;
+    }
+
+    /* Abas */
+
+
+    .top-navbar {
+        display: none;
+    }
+
+    .top-navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-navbar a:hover {
+        text-decoration: none;
+        color: rgb(192, 192, 192);
+    }
+
+    /* Pesquisa */
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .searchInput {
+        display: none;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+    .searchButton:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Login e Registro */
+
+    .loginButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 3em;
+    }
+
+    .buttonLogin {
+        border-radius: 10px;
+        margin-left: 10px;
+        height: 2em;
+        width: 8em;
+        border: none;
+        font-size: 8px;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#3d3d3d, #0c0006);
+    }
+
+    .buttonLogin:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Carousel */
+
+    .carousel-inner {
+        width: 100%;
+        height: 150px;
+    }
+
+    .catalogo h3 {
+        margin-left: 1em;
+    }
+
+    /* RodaPe */
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #0a0a0a;
+    }
+
+    .redesSociais {
+        display: flex;
+        margin: 5em;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-size: 8px;
+        margin-left: 0px;
+        list-style-type: none;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+}
+
+/* Smartphone */
+
+@media screen and (min-width: 320px) and (max-width: 406px) {
+
+
+    /* Nav Bar */
+
+    #burguer {
+        display: block;
+        position: absolute;
+        margin-right: 0.5em;
+    }
+
+    #burguer:hover {
+        color: #b11414;
+    }
+
+    .hamburger {
+        height: 1em;
+        width: 1em;
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    /* Logo */
+
+    .logoMenu {
+        height: 20px;
+        width: 4em;
+    }
+
+    /* Abas */
+
+
+    .top-navbar {
+        display: none;
+    }
+
+    .top-navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-navbar a:hover {
+        text-decoration: none;
+        color: rgb(192, 192, 192);
+    }
+
+    /* Pesquisa */
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .searchInput {
+        display: none;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+    .searchButton:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Login e Registro */
+
+    .loginButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 3em;
+    }
+
+    .buttonLogin {
+        border-radius: 10px;
+        margin-left: 10px;
+        height: 2em;
+        width: 6em;
+        border: none;
+        font-size: 8px;
+        border-width: 1px;
+        color: #ffffff;
+        border-color: #0f0f0f;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #5e5e5e;
+        text-shadow: inset 0px 1px 0px #777777;
+        background: linear-gradient(#3d3d3d, #0c0006);
+    }
+
+    .buttonLogin:hover {
+        background: linear-gradient(#0c0006, #5e5e5e);
+    }
+
+    /* Carousel */
+
+    .carousel-inner {
+        width: 100%;
+        height: 150px;
+    }
+
+    .catalogo h3 {
+        margin-left: 1em;
+    }
+
+    /* RodaPe */
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #0a0a0a;
+    }
+
+    .redesSociais {
+        display: flex;
+        margin: 0em;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-size: 8px;
+        margin-left: 0px;
+        list-style-type: none;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+}

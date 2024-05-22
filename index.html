@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<div lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../src/logo_gbs.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<header>
+    <div class="navbar-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+        <div class="navbar">
+            <a href="/index.html">
+                <img class="logoMenu" src="/assets/logoEst.png" href="/index.html" id="logoMenuMobile" alt="Logo">
+            </a>            
+            <nav>
+                <label for="menu-toggle" class="hamburger">
+                    <i class="fa-solid fa-bars fa-2xl" id="burguer" (click)="toggleNavbar()"></i>
+                </label>
+                <div class="top-navbar">
+                    <a id="botaoMenu" mat-raised-button style="cursor: pointer;" href="#projeto">Séries</a>
+                    <a id="botaoMenu" mat-raised-button style="cursor: pointer;" href="https://api.whatsapp.com/send?phone=5581988467890" target="_blank">Filmes</a>
+                    <a id="botaoMenu" mat-raised-button style="cursor: pointer;" href="#projeto">Doramas</a>
+                    <a id="botaoMenu" mat-raised-button style="cursor: pointer;" href="#projeto">Internacional</a>
+                </div>
+            </nav>
+            <div class="searchContainer">
+                <input type="text" class="searchInput" id="searchInput" placeholder="Digite sua pesquisa...">
+                <button class="searchButton" onclick="search()">Pesquisar</button>
+            </div>
+            <div class="loginButtons">
+                <button class="buttonLogin" onclick="registro()">Registrar</button>
+                <button class="buttonLogin" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/background.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/body_1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/75B.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="catalogoGeral">
+        <div class="catalogo">
+            <h3>Populares na Estacioflix</h3>
+            <div class="container imagensCatalogo" id="scrollContainer1">
+                <img src="/assets/01.jpeg" alt="">
+                <img src="/assets/02.jpeg" alt="">
+                <img src="/assets/73.jpeg" alt="">
+                <img src="/assets/04.jpeg" alt="">
+                <img src="/assets/55.jpeg" alt="">
+                <img src="/assets/06.jpeg" alt="">
+                <img src="/assets/07.jpeg" alt="">
+                <img src="/assets/08.jpeg" alt="">
+                <img src="/assets/09.jpeg" alt="">
+                <img src="/assets/78.jpeg" alt="">
+            </div>
+        </div>
+        <div class="catalogo">
+            <h3>Lançamentos</h3>
+            <div class="container imagensCatalogo" id="scrollContainer2" >
+                <img src="/assets/81.jpeg" alt="">
+                <img src="/assets/12.jpeg" alt="">
+                <img src="/assets/38.jpeg" alt="">
+                <img src="/assets/14.jpeg" alt="">
+                <img src="/assets/43.jpeg" alt="">
+                <img src="/assets/16.jpeg" alt="">
+                <img src="/assets/17.jpeg" alt="">
+                <img src="/assets/62.jpeg" alt="">
+                <img src="/assets/19.jpeg" alt="">
+                <img src="/assets/70.jpeg" alt="">
+            </div>
+        </div>
+        <div class="catalogo">
+            <h3>Suspense</h3>
+            <div class="container imagensCatalogo" id="scrollContainer3" >
+                <img src="/assets/21.jpeg" alt="">
+                <img src="/assets/22.jpeg" alt="">
+                <img src="/assets/23.jpeg" alt="">
+                <img src="/assets/24.jpeg" alt="">
+                <img src="/assets/66.jpeg" alt="">
+                <img src="/assets/26.jpeg" alt="">
+                <img src="/assets/27.jpeg" alt="">
+                <img src="/assets/82.jpeg" alt="">
+                <img src="/assets/29.jpeg" alt="">
+                <img src="/assets/52.jpeg" alt="">
+            </div>
+        </div>
+        <div class="catalogo">
+            <h3>Terror</h3>
+            <div class="container imagensCatalogo" id="scrollContainer4" >
+                <img src="/assets/31.jpeg" alt="">
+                <img src="/assets/32.jpeg" alt="">
+                <img src="/assets/76.jpeg" alt="">
+                <img src="/assets/34.jpeg" alt="">
+                <img src="/assets/35.jpeg" alt="">
+                <img src="/assets/36.jpeg" alt="">
+                <img src="/assets/37.jpeg" alt="">
+                <img src="/assets/38.jpeg" alt="">
+                <img src="/assets/77.jpeg" alt="">
+                <img src="/assets/40.jpeg" alt="">
+            </div>
+        </div>
+        <div class="catalogo">
+            <h3>Escolhas do usuário</h3>
+            <div class="container imagensCatalogo" id="scrollContainer5">
+                <img src="/assets/16.jpeg" alt="">
+                <img src="/assets/42.jpeg" alt="">
+                <img src="/assets/43.jpeg" alt="">
+                <img src="/assets/26.jpeg" alt="">
+                <img src="/assets/45.jpeg" alt="">
+                <img src="/assets/78.jpeg" alt="">
+                <img src="/assets/79.jpeg" alt="">
+                <img src="/assets/48.jpeg" alt="">
+                <img src="/assets/49.jpeg" alt="">
+                <img src="/assets/83.jpeg" alt="">
+            </div>
+        </div>
+        <div class="catalogo">
+            <h3>Comédia</h3>
+            <div class="container imagensCatalogo" id="scrollContainer6" >
+                <img src="/assets/51.jpeg" alt="">
+                <img src="/assets/52.jpeg" alt="">
+                <img src="/assets/53.jpeg" alt="">
+                <img src="/assets/54.jpeg" alt="">
+                <img src="/assets/55.jpeg" alt="">
+                <img src="/assets/56.jpeg" alt="">
+                <img src="/assets/27.jpeg" alt="">
+                <img src="/assets/23.jpeg" alt="">
+                <img src="/assets/59.jpeg" alt="">
+                <img src="/assets/60.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/40faa94014.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="rodape">
+    <div class="redesSociais">
+            <a href="https://www.instagram.com/residencial.kanaloa/" target="_blank"
+                    style="text-decoration: none; font-size: 18px; color: #ffffff;"><i
+                        class="fa-brands fa-facebook fa-lg"
+                        style="color: #ffffff; margin-right: 0.3em;"></i></a>
+            <a href="https://www.instagram.com/construtoragfsouza/" target="_blank"
+                    style="text-decoration: none; font-size: 18px; color: #ffffff;"><i
+                        class="fa-brands fa-instagram fa-lg"
+                        style="color: #ffffff; margin-right: 0.3em;"></i></a>
+            <a href="https://www.instagram.com/construtoragfsouza/" target="_blank"
+                    style="text-decoration: none; font-size: 18px; color: #ffffff;"><i
+                        class="fa-brands fa-twitter fa-lg"
+                        style="color: #ffffff; margin-right: 0.3em;"></i></a>            
+            <a href="https://www.instagram.com/construtoragfsouza/" target="_blank"
+                    style="text-decoration: none; font-size: 18px; color: #ffffff;"><i
+                        class="fa-brands fa-youtube fa-lg"
+                        style="color: #ffffff; margin-right: 0.3em;"></i></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#navbar" style="text-decoration: none; font-size: 16px; color: #ffffff;">Audiodescrição</a></li>
+                <li><a href="#quemsomos" style="text-decoration: none; font-size: 16px; color: #ffffff;">Depoimentos</a></li>
+                <li><a href="#projeto" style="text-decoration: none; font-size: 16px; color: #ffffff;">Avisos legais</a></li>
+            </ul>
+            <ul>
+                <li><a href="./Contato/Contato.html" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Central de ajuda</a></li>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Carreiras</a></li>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Cookies</a></li>
+            </ul>
+            <ul>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Plano Pré-pago</a></li>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Termos de Uso</a></li>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Informações corporativas</a></li>
+            </ul>
+            <ul>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Imprensa</a></li>
+                <li><a href="#contato" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Privacidade</a></li>
+                <li><a href="./Contato/Contato.html" style="text-decoration: none; font-size: 16px; color: #ffffff; cursor: pointer;">Entre em contato</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright 2024 Estacioflix, Inc.
+        </div>
+    </div>
+</footer>
+</html>
